@@ -454,6 +454,20 @@ button:hover {
               <ol><strong>Authentification :</strong> SSL permet l'authentification des 2 entités (authentification client facultative) basé sur des certificats X.509, et l'authentification des données grâce aux MACs.</ol>
            </ul>
           </p>
+    <h1>Déroulement des échanges SSL</h1>
+    <p>Les échanges définis par le protocole SSL se déroulent en deux phases :</p>
+    <h3><b>1)première phase : </b></h3>authentification du serveur 
+    <p> Suite à la requête d'un client, le serveur envoie son certificat au client et lui liste les algorithmes
+cryptographiques, qu'il souhaite négocier. Le client vérifie la validité du certificat à l'aide de la clé
+publique du CA (Certificate Authority) contenue dans le navigateur. Si le certificat est valide, le client
+génère un pré-master secret (PMS) de 48 octets qui servira à dériver le master secret (MS) de même
+taille, 48 octets, ce qui représente l'entropie maximale de la clé. Ce PMS est chiffré avec la clé publique
+du serveur puis transmis à ce dernier. Les données échangées par la suite entre le client et le serveur
+sont chiffrées et authentifiées à l'aide de clés dérivées de la clé maître.  </p>
+    <h3><b>2) Deuxième phase :</b> </h3> authentification (optionnelle) du client
+    <p>Le serveur (et seulement lui) peut demander au client de s'authentifier en lui demandant tout d'abord
+son certificat. Le client réplique en envoyant ce certificat puis en signant un message avec sa clé privée
+(ce message contient des informations sur la session et le contenu de tous les échanges précédents).</p>
         </div>
       </div>
     </div>
