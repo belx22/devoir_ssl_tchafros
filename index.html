@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Devoir</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
+  <style type="text/css">
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #616161;
+    max-height: 250px;
+    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(35deg, rgba(1, 65, 39, 0.2), rgba(1, 65, 39, 0.1)), url("https://res.cloudinary.com/sape123/image/upload/c_scale,w_1000/v1572364599/36634448-office-desk_iifquo.jpg") no-repeat center center fixed;
+  /* background-blend-mode: multiply; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0;
+    /* border: 1px solid #e3e3e3; */
+    margin-top: -100px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.bioD {
+    display: flex;
+    padding-top: 10px;
+}
+
+.bioDRight {
+    padding-left: 20px;
+}
+
+.biodata {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.details {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+}
+
+.details h1 {
+    font-size: 25px;
+    color: #08c487;
+    text-transform: uppercase;
+}
+
+.details h1 span {
+    color: #333;
+    font-weight: 500;
+}
+
+.inner-box {
+    padding: 30px;
+     width: 100%;
+    display: inline-flex;
+}
+
+.logo {
+    color: #fff;
+    padding-top: 25px;
+    font-size: 15px;
+    font-family: 'Roboto' 'Arial';
+}
+
+.midspace {
+    padding: 15px;
+}
+
+.pix {
+    padding: 0;
+    height: 268px;
+    /* box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.9); */
+}
+
+progress[value] {
+    text-align: left;
+    height: 10px;
+    width: 100%;
+
+    -webkit-appearance: none;
+    border: none;
+}
+
+progress:before {
+    content: attr(data-label);
+    font-size: 0.8em;
+    vertical-align: 0
+}
+
+progress::-webkit-progress-bar {
+    background-color: #c9c9c9;
+}
+
+progress::-webkit-progress-value {
+    background-color: #08c487;
+}
+
+progress::-moz-progress-bar {
+    background-color: #08c487;
+}
+
+.row {
+    padding-top: 35px;
+    padding-bottom: 5px;
+}
+
+.skill-level {
+    padding-left: 30px;
+    width: 60%;
+}
+
+.probox {
+    padding-bottom: 30px;
+}
+
+.skill-type p {
+    padding-bottom: 24px;
+    text-align: right;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #08c487;
+    padding: 14px;
+}
+
+.svg:hover {
+    padding: 5px;
+}
+
+.svg:hover {
+    border: solid 1px #fff;
+}
+
+.shodow-box {
+    background: #fff;
+    width: 100%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    display: inline-flex;
+}
+
+.tittle {
+    color: #08c487;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.topbg {
+    min-height: 30vh;
+    background: #08c487;
+    background-attachment: fixed;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+/* WORK EXPERIENCE */
+
+
+.expi {
+    padding: 30px;
+}
+
+.exp-box {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.work {
+    flex-grow: 4;
+}
+
+.work h1 {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.work h2 {
+    font-size: 15px;
+}
+
+.work ul {
+    list-style: square;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+/* INTEREST */
+
+
+.interest ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    flex-direction: row;
+    background: #08c487;
+    height: 50px;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info p {
+    color: #fff;
+    padding-top: 15px;
+}
+
+
+#float-btn {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/*add full-width input fields*/ 
+input[type=text], 
+input[type=password] { 
+    width: 100%; 
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    display: inline-block; 
+    border: 2px solid #ccc; 
+    box-sizing: border-box; 
+} 
+/* set a style for all buttons*/ 
+.contact-me {
+    position: fixed;
+    display: flex;
+    bottom:40px;
+    right:40px;
+    
+}
+
+button { 
+    background-color: #08c487; 
+    color: white; 
+    padding: 14px 20px; 
+    margin: 8px 0; 
+    cursor: pointer; 
+    /* width: 100%;  */
+    border-radius: 5%;
+    font-size: 15px;
+    opacity: 0.7;
+} 
+
+button:hover {
+    background-color: #333;
+}
+
+/*set styles for the cancel button*/ 
+.cancelbtn { 
+    padding: 14px 20px; 
+    background-color: #FF2E00; 
+} 
+/*float cancel and signup buttons and add an equal width*/ 
+.cancelbtn, 
+.signupbtn { 
+    float: left; 
+    width: 50% 
+} 
+/*add padding to container elements*/ 
+.form-container { 
+    padding: 16px; 
+} 
+
+.form-input {
+    width: 100%; 
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    display: inline-block; 
+    border: 2px solid #ccc; 
+    box-sizing: border-box; 
+}
+/*define the modal’s background*/ 
+  
+.modal { 
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100vh; 
+    overflow: auto; 
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.7); 
+    /* padding-top: 60px;  */
+} 
+/*define the modal-content background*/ 
+  
+.modal-content { 
+    background-color: #fefefe; 
+    margin: 5% auto 0 auto; 
+    border: 1px solid #888; 
+    width: 50%; 
+} 
+/*define the close button*/ 
+  
+.close { 
+    position: absolute; 
+    right: 35px; 
+    top: 15px; 
+    color: #000; 
+    font-size: 40px; 
+    font-weight: bold; 
+} 
+/*define the close hover and focus effects*/ 
+  
+.close:hover, 
+.close:focus { 
+    color: red; 
+    cursor: pointer; 
+} 
+  
+.clearfix::after { 
+    content: ""; 
+    clear: both; 
+    display: table; 
+} 
+  
+@media screen and (max-width: 600px) { 
+    .cancelbtn, 
+    .signupbtn { 
+        width: 100%; 
+    } 
+  .container, body, section {
+      padding: 0px;
+      margin: 0px;
+      width: auto;
+      text-align: left;
+    }
+    .pix img {
+      width: 360px;
+      height: 280px;
+    }
+    .form-input, .modal, .form-container, .modal-content {
+      width: auto;
+    }
+  .form-input {
+    width: 100%;
+    display: inline-block;
+  }
+} 
+  </style>
+</head>
+
+<body>
+
+  <head>
+    <div class="topbg">
+      <div class="container">
+        <div class="banner">
+          <div class="logo">
+            <h1><span>SSL : Secure Socket Layer</span> </h1>
+          </div>
+          <div class="sociaBox">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </head>
+  <section id="bio-data">
+    <div class="container">
+      <div class="bio">
+        <div class="biodata">
+          <div class="details">
+            <div class="heading">
+              <h1> INTRODUCTION</h1>
+            </div>
+            <p class="bioD">
+              <strong>SSL</strong>(Secure Socket Layer) est un protocole de sécurisation des échanges, développé par Netscape. Il a
+              été conçu pour assurer la sécurité des transactions sur Internet (notamment entre un client et un
+              serveur), et il est intégré depuis 1994 dans les navigateurs. Il existe plusieurs versions de SSL, il
+              fonctionne de manière indépendante par rapport aux applications qui l’utilisent ; il est obligatoirement
+              au-dessus de la couche TCP et certains le considèrent comme un protocole de niveau 5 (couche
+              session).
+          </p>
+          
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="container">
+      <div class="row">
+        <div class="tittle">
+          <h1>Rôle du SSL</h1>
+        </div>
+      </div>
+      <div class="shodow-box">
+        <div class="inner-box">
+          
+           <p class="row">
+           <ul>
+            SSL permet d'assurer les services de sécurité suivants:</br></br>
+             <ol><strong>confidentialité :</strong> elle est obtenue par l'utilisation d'algorithmes à chiffrement symétrique de
+              blocs comme DES, FORTEZZA, IDEA, 3DES ou RC2, ou par des algorithmes à chiffrement
+              symétrique de flots comme RC4</ol>
+              <ol><strong>Intégrité :</strong> el'intégrité des données est assurée par l'utilisation de MACs (Message Authentication Code)</ol>
+              <ol><strong>Authentification :</strong> SSL permet l'authentification des 2 entités (authentification client facultative) basé sur des certificats X.509, et l'authentification des données grâce aux MACs.</ol>
+           </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
